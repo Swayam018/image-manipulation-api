@@ -74,8 +74,7 @@ app.get('/manipulate', async (req, res) => {
                 image = image.oilpaint();
                 break;
             default:
-                return res.status(400).send('Invalid filter parameter.');
-                
+                return res.status(400).send('Invalid filter parameter.');   
         }
     }
     // Rotate
