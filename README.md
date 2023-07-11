@@ -85,8 +85,7 @@ The API provides a single endpoint at `/manipulate` that accepts various URL par
    ```shell
   GET /manipulate?url=<IMAGE_URL>&filter=sepia
    ```
-
-   Replace `<IMAGE_URL>` with the URL of the image you want to add filter.
+ Replace `<IMAGE_URL>` with the URL of the image you want to add filter.
 
    
 "sepia": Applies a sepia filter to the image by increasing the brightness, reducing the saturation, and shifting the hue.
@@ -97,10 +96,12 @@ The API provides a single endpoint at `/manipulate` that accepts various URL par
 "negate": Inverts the colors of the image.
 "oilpaint": Applies an oil painting effect to the image.
 
-6.Rotate the image:
- make a GET request to the /manipulate endpoint with the rotate parameter set to the desired rotation angle. For example, to rotate the image by 90 degrees, use the following URL:
 
-   ```shell
+
+
+6.Rotate the image:
+ make a GET request to the /manipulate endpoint with the rotate parameter set to the desired rotation angle. For example, to rotate the image by 90 degrees
+ ```shell
 http://localhost:4100/manipulate?url=<IMAGE_URL>&rotate=90
    ```
 7.Watermark the image:
